@@ -1,0 +1,52 @@
+/* Add Downloaded font to page */
+@font-face {
+    font-family: retro;
+    src: url(assets/lunchds.ttf);
+  }
+/* Set font to everything */
+* {
+    font-family: retro;
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0;
+}
+
+.main {
+    margin-left: 20px;
+    margin-right: 20px;
+    /* TEMP Width */
+    width: 50%;
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+form {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+form > div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+}
+
+input {
+    appearance: none;
+    width: 10rem;
+}
+
+.btn {
+    /* To palce button below other elements */
+    display: block;
+    width: 100%;
+}
