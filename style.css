@@ -130,3 +130,12 @@ input[type=password] {
     background-color: var(--lightPurp);
     color: var(--darkPurp);
 }
+
+a {
+    color: var(--lightPurp);
+}
+
+a:hover {
+    color: var(--darkPurp);
+    background-color: var(--lightPurp);
+}
