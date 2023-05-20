@@ -99,3 +99,9 @@ input[type=password] {
     display: block;
     width: 100%;
 }
+
+.btn > button {
+    text-align: center;
+    height: 2rem;
+    width: 10rem;
+}
