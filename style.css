@@ -15,11 +15,22 @@ body {
     margin: 0;
 }
 
+/* Resize image to fit the screen -- no scroll */
+.left-sidebar {
+    height: 100%;
+}
+
+.left-sidebar > img {
+    max-height: 100vh;
+    max-width: 100%;
+}
+
 .main {
     margin-left: 20px;
     margin-right: 20px;
     /* TEMP Width */
     width: 50%;
+    height: 100vh;
     text-align: center;
 
     display: flex;
