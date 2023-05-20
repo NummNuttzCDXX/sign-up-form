@@ -11,6 +11,7 @@
     --darkPurp: #110125;
     --purp: #39025F;
     --lightPurp: #D714C8;
+    --blue: #0624AA;
 }
 
 body {
@@ -87,6 +88,17 @@ input {
     appearance: none;
     width: 10rem;
     height: 1.2rem;
+    text-align: center;
+
+    background-color: var(--darkPurp);
+    border: 3px solid var(--purp);
+    border-radius: 5px;
+    color: var(--lightPurp);
+}
+
+input:focus, input:hover {
+    background-color: var(--lightPurp);
+    color: var(--darkPurp);
 }
 
 /* Pwd wasnt working with Custom Font -- Had to change */
@@ -100,8 +112,19 @@ input[type=password] {
     width: 100%;
 }
 
+/* Submit Button */
 .btn > button {
     text-align: center;
     height: 2rem;
     width: 10rem;
+
+    background-color: var(--darkPurp);
+    border: 3px solid var(--purp);
+    border-radius: 5px;
+    color: var(--lightPurp);
+}
+
+.btn > button:hover, .btn > button:focus {
+    background-color: var(--lightPurp);
+    color: var(--darkPurp);
 }
