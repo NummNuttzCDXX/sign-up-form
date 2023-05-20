@@ -80,6 +80,10 @@ legend {
     width: 100%;
 }
 
+.disc {
+    font-size: .8rem;
+}
+
 form > div {
     display: flex;
     flex-direction: column;
@@ -101,6 +105,17 @@ input {
 input:focus, input:hover {
     background-color: var(--lightPurp);
     color: var(--darkPurp);
+}
+
+/* Required Fields */
+input:required + span {
+    position: relative;
+}
+input:required + span::after {
+    content: '*';
+    position: absolute;
+    bottom: 2.1rem;
+    left: 10.1rem;
 }
 
 /* Pwd wasnt working with Custom Font -- Had to change */
