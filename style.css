@@ -6,6 +6,11 @@
 /* Set font to everything */
 * {
     font-family: retro;
+
+    /* Declaring Custom Color Variables */
+    --darkPurp: #110125;
+    --purp: #39025F;
+    --lightPurp: #D714C8;
 }
 
 body {
@@ -15,6 +20,9 @@ body {
     justify-content: space-between;
 
     margin: 0;
+    
+    background: linear-gradient(to bottom right, var(--darkPurp) 50%, var(--purp));
+    color: var(--lightPurp);
 }
 
 /* Resize image to fit the screen -- no scroll */
@@ -35,6 +43,13 @@ body {
     height: 100vh;
     text-align: center;
 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
