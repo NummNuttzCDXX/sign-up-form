@@ -9,6 +9,8 @@
 }
 
 body {
+    font-size: 16px;
+
     display: flex;
     justify-content: space-between;
 
@@ -34,15 +36,21 @@ body {
     text-align: center;
 
     display: flex;
-    align-items: center;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    margin-bottom: 50px;
 }
 
 form {
-    width: 60%;
+    width: 80%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
 form > div {
