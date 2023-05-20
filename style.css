@@ -57,7 +57,7 @@ body {
 
     width: 70%;
 
-    border: 2px solid rgb(0, 255, 0);
+    border: 2px solid var(--lightPurp);
     border-radius: 5px;
 }
 
@@ -68,9 +68,13 @@ header {
 form {
     width: 80%;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     gap: 30px;
+}
+
+legend {
+    width: 100%;
 }
 
 form > div {
@@ -83,6 +87,11 @@ input {
     appearance: none;
     width: 10rem;
     height: 1.2rem;
+}
+
+/* Pwd wasnt working with Custom Font -- Had to change */
+input[type=password] {
+    font-family: sans-serif;
 }
 
 .btn {
