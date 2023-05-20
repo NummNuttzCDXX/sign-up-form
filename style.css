@@ -118,6 +118,11 @@ input:required + span::after {
     left: 10.1rem;
 }
 
+/* Error class for invalid fields -- Add class with JS so it doesnt automatically apply styles */
+.error {
+    border: 2px solid red;
+}
+
 /* Pwd wasnt working with Custom Font -- Had to change */
 input[type=password] {
     font-family: sans-serif;
@@ -131,6 +136,7 @@ input[type=password] {
 
 /* Submit Button */
 .btn > button {
+    margin-bottom: 15px;
     text-align: center;
     height: 2rem;
     width: 10rem;
